@@ -6,7 +6,7 @@ name: Deploy Bicep files
 variables:
   vmImageName: "ubuntu-latest"
 
-  azureServiceConnection: "Skynibble"
+  azureServiceConnection: "ADO-SrvConn"
   resourceGroupName: "Bicep"
   location: "eastus"
   templateFile: "main.bicep"
