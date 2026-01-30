@@ -1,5 +1,5 @@
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
-    name: 'toylaunchstorage${uniqueString(resourceGroup().id)}'
+    name: 'toysa${uniqueString(resourceGroup().id)}'
     location: 'Central US'
     sku: {
         name: 'Standard_LRS'
@@ -9,4 +9,5 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
         accessTier: 'Hot'
     }
 }
+
 
